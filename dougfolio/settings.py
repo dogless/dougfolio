@@ -1,9 +1,5 @@
 import dj_database_url
 import os
-# from django.core.management import setup_environ
-# from dougfolio import settings
-
-# setup_environ(settings)
 
 # Django settings for dougfolio project.
 
