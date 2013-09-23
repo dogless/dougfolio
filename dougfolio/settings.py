@@ -172,10 +172,18 @@ SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 # Allow all host headers
 ALLOWED_HOSTS = ['*']
 
-# Static asset configuration
+PROJECT_PATH = os.path.dirname(os.path.abspath(__file__))
 STATIC_ROOT = 'staticfiles'
 STATIC_URL = '/static/'
 
 STATICFILES_DIRS = (
-    os.path.join(os.path.dirname(os.path.realpath(__file__)), 'static'),
+    os.path.join(PROJECT_PATH, 'static'),
 )
+
+# Static asset configuration
+# STATIC_ROOT = 'staticfiles'
+# STATIC_URL =  PROJECT_ROOT + '/static/'
+
+# STATICFILES_DIRS = (
+#     os.path.join(os.path.dirname(os.path.realpath(__file__)), 'static'),
+# )
