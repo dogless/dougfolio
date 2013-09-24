@@ -10,9 +10,10 @@ body {
 	width: 100%; 
 }
 
-h1 { font-weight: 700; 
+h1 { 
+	font-weight: 700; 
 	font-family: "Droid Sans", 
-	sans-serif; font-size: 2.8em; 
+	sans-serif; font-size: 5em; 
 	line-height: 1.2; 
 }
 h2 { 
@@ -24,46 +25,62 @@ h2 {
 
 
 #sidebar{
-	width:10%;
+	width:12.5%;
 	height:100%;
 	float:left;
+	color: #aaa;
+	background-color: #fff;
+	opacity: 0;
+	margin-left:-10%;
+}
+
+#sidebar-item{
+	height: 2.5%;
+	width:100%%;
+}
+
+#sidebar-item:hover{
+	color: #111;
+	-moz-transition: all .3s;
+	-webkit-transition: all .3s;
+	transition: all .3s;
 }
 
 
 #banner { 
-	background: url(http://interfacelift.com/wallpaper/D47cd523/03290_formula1grandprix2013montecarlofever_1920x1080.jpg) no-repeat fixed 50% 0; 
+	background: url(http://interfacelift.com/wallpaper/D47cd523/03330_mauipastel_1920x1200.jpg) no-repeat fixed 50% 0; 
 	background-size: cover; 
 	color: #fff; 
 	height: 100%; 
 	width: 100%; 
 	overflow: hidden; 
-
 }
 
+/*
 #bannertext:after{
 	content:'';
 	display:inline;
 	position:absolute;
-	top:100%; /*should be set to 100% */
+	top:100%; 
 	left: 42.5%;
 	width:0;
 	height:1;
-	border-color: white transparent transparent transparent; /*border color should be same as div div background color*/
+	border-color: white transparent transparent transparent; 
 	border-style: solid;
 	border-width: 30px;
-}
+}*/
 
 #bannertext { 
 	width: 25em; 
-	position: fixed; 
-	top: 30%; 
-	left: 50%; 
-	border: .5em solid #fff;
+	position: absolute; 
+	top: 20%; 
+	right: 15%; 
 	margin-left: -12em; 
 	padding: 1em 0; 
 	-moz-transition: all .2s;
 	-webkit-transition: all .2s;
 	transition: all .2s;
+	opacity: 0;
 
 }
 
