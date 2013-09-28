@@ -86,17 +86,32 @@ h2 {
 
 }
 
-.content {
-	max-width: 50em; 
-	text-align: justify; 
+.content{
+	height:100%;
+	width:100%;
+	display: none;
+}
+
+.section {
 	margin: 0 auto; 
 	padding: 2em; 
 	height: 90%;
 	font-size:15px;
 }
 
-.content p { 
+.section p { 
 	margin: 0 0 2em; 
+}
+
+.first{
+	background: url(http://interfacelift.com/wallpaper/D47cd523/03328_manarolanight_1680x1050.jpg) no-repeat 50% 0%; 
+	background-size:cover;
+
+}
+
+.third{
+	background: url(http://www.disneytouristblog.com/wp-content/uploads/2011/06/DSC_8512-as-Smart-Object-1-copy.jpg) no-repeat 50% 0%; 
+	background-size:cover;
 }
 
 .shadow {

@@ -1,6 +1,6 @@
 function EasyPeasyParallax() {
 	scrollPos = $(this).scrollTop();
-	$('.banner').css({
+	$('.first').css({
 		'background-position' : '50% ' + (-scrollPos/4)+"px"
 	});
 	$('.bannertext').css({
@@ -35,7 +35,8 @@ $(document).ready(function(){
 
     $(".bannertext").click(function (){
         $('.banner').animate({
-            marginTop: '-100%'
+            marginLeft: '-100%'
 		}, 600, 'swing');
+		$('.content').css("display", "inline");
     });
 });
