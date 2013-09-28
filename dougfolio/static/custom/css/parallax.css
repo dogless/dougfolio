@@ -24,7 +24,7 @@ h2 {
 }
 
 
-#sidebar{
+.sidebar{
 	width:12.5%;
 	height:100%;
 	float:left;
@@ -34,12 +34,12 @@ h2 {
 	margin-left:-10%;
 }
 
-#sidebar-item{
+.sidebar-item{
 	height: 2.5%;
 	width:100%%;
 }
 
-#sidebar-item:hover{
+.sidebar-item:hover{
 	color: #111;
 	-moz-transition: all .3s;
 	-webkit-transition: all .3s;
@@ -47,13 +47,15 @@ h2 {
 }
 
 
-#banner { 
-	background: url(http://interfacelift.com/wallpaper/D47cd523/03330_mauipastel_1920x1200.jpg) no-repeat fixed 50% 0; 
-	background-size: cover; 
+.banner { 
+	background: url(/static/img/disneylandcompressed.jpg) no-repeat 50% 0%; 
+	background-size: 100% 100%;
 	color: #fff; 
 	height: 100%; 
 	width: 100%; 
 	overflow: hidden; 
+	position: fixed;
+
 }
 
 /*
@@ -70,21 +72,21 @@ h2 {
 	border-width: 30px;
 }*/
 
-#bannertext { 
+.bannertext { 
 	width: 25em; 
 	position: absolute; 
-	top: 20%; 
-	right: 15%; 
+	top: 30%; /* 30 */
+	right: 10%; /* 10 */
 	margin-left: -12em; 
 	padding: 1em 0; 
 	-moz-transition: all .2s;
 	-webkit-transition: all .2s;
 	transition: all .2s;
-	opacity: 0;
+	opacity: 1;
 
 }
 
-#content {
+.content {
 	max-width: 50em; 
 	text-align: justify; 
 	margin: 0 auto; 
@@ -93,7 +95,7 @@ h2 {
 	font-size:15px;
 }
 
-#content p { 
+.content p { 
 	margin: 0 0 2em; 
 }
 
@@ -109,8 +111,38 @@ h2 {
     transition: all 1s linear;
 }
 
-
-#footer {
+.footer {
   height: 10%;
   background-color: #f5f5f5;
 }
+
+.welcome-rotate{
+	color: #f0f0ee;
+	transform:rotate(-11deg);
+	-moz-transform:rotate(-11deg);
+	-ms-transform:rotate(-11deg);
+	-webkit-transform:rotate(-11deg); /* 11 */
+}
+
+.button{
+	background: none;
+	border:none;
+}
+
+.Three-Dee{
+	font-family: 'Helvetica Neue',Helvetica, sans-serif;
+	line-height: 1em;
+	font-weight:bold;
+	/*text-shadow:0px 0px 0 rgb(192,69,74),1px 0px 0 rgb(210,210,210),2px 0px 0 rgb(193,193,193),3px 0px 0 rgb(176,176,176),4px 0px 0 rgb(159,159,159),5px 0px 0 rgb(141,141,141),6px 0px 0 rgb(124,124,124),7px 0px 0 rgb(107,107,107),8px 0px 0 rgb(89,89,89),9px 0px 0 rgb(72,72,72), 10px 0px 0 rgb(55,55,55),11px 0px 10px rgba(0,0,0,0.5),11px 0px 1px rgba(0,0,0,0.5),0px 0px 10px rgba(0,0,0,.2);*/
+	text-shadow: 0px 0px 0 
+        rgb(182,105,99),5px -1px 0 
+        rgb(221,102,104),0 0 0 
+        rgb(205,89,92),0 0 0 
+        rgb(184,174,73),6px -2px 0 
+        rgb(171,65,65),7px -3px 0 
+        rgb(156,87,80), 8px -4px 0 
+        rgb(145,81,71),9px -5px 6px 
+        rgba(0,0,0,0.6),10px -6px 1px 
+        rgba(122,81,71,0.5),0px 0px 6px 
+        rgba(0,0,0,.2);}
+
