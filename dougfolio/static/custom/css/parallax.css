@@ -95,9 +95,9 @@ h3{
 	position: relative;
 	bottom: 75px;
 	z-index: 1;
-	text-align: center;
 	display: inline-block;
-	border: 50px solid white;
+	margin: 0 0 0 10px;
+	border: 55px solid white;
 	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 	-moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
