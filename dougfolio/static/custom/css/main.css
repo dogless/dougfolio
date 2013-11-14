@@ -1,6 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700|Raleway:400,300,700);
 
-
 body { 
 	font-family: 'Raleway', sans-serif;
 	font-size: 13px;
@@ -47,117 +46,85 @@ h3{
 	font-family: 'Raleway', sans-serif;
 }
 
-.banner { 
-	background: url(/static/img/disneylandcompressed.jpg) no-repeat 50% 0%; 
-	background-size: 100% 100%;
-	color: #fff; 
-	height: 100%; 
-	width: 100%; 
-	overflow: hidden; 
-	position: fixed;
-
-}
-
-.bannertext { 
-	width: 25em; 
-	position: absolute; 
-	top: 30%; /* 30 */
-	right: 10%; /* 10 */
-	margin-left: -12em; 
-	padding: 1em 0; 
-	-moz-transition: all .2s;
-	-webkit-transition: all .2s;
-	transition: all .2s;
-	opacity: 1;
-
-}
-
 .content{
-	height:100%;
-	width:100%;Ï
 	position: relative;
-}
-
-.section {
-	margin: 0 auto; 
-	padding: 2em; 
-	position: relative;
+	height:inherit;
+	width:100%;
 }
 
 .first{
+	position: relative;
 	background: url("/static/img/temp.jpg") 50% 0%; 
 	background-size:cover;
 	height: 40em;
 	width: 100%;
 }
 
+/*.first:after {
+	position: relative;
+	top: 12em;
+	margin: 0 auto;
+	z-index: 2;
+	display: inline-block;
+	content: "V";
+	font-size: 40px;
+	letter-spacing: -5px;
+	color: red;
+}*/
+/*
 .second:after {
 	position: relative;
-	bottom: 75px;
+	bottom: 60px;
+	margin: 0 auto;
 	z-index: 1;
 	display: inline-block;
-	margin: 0 0 0 10px;
 	border: 55px solid white;
 	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 	-moz-box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
 	box-shadow: 2px 2px 2px rgba(0,0,0,0.4);
-	border-radius:200%;
+	border-radius:100%;
 	content: "";
-	background: blackÏ;
-}
-/*
-.second:before {
-	position: relative;
-	top: -0.5em;
-	left: 47%;
-	z-index: 2;
-	display: inline-block;
-	content: "\\/";
-	font-size: 40px;
-	letter-spacing: -6px;
-
-}*/
-
-/*
-.first:before {
-	position: relative;
-	top:98%;
-	z-index: 2;
-
-	display: block;
-	border: 1px solid black;
-	content: 'c';
+	background: black;
 }*/
 
 .second{
-	height: 80%;
+	position: relative;
+	height: 100%;
 	width: 100%;
 	background: #FFFFFF;
 }
 
-/*.section p { 
-	margin: 0 0 2em; 
-	position: absolute;
+.third{
+	position:relative;
+	height: 100%;
+	width: 100%;
 }
-*/
+
+.test{
+	position: relative;
+	margin: 0 auto;
+}
 
 .nav{
-	top: 0px;
+	position: absolute;
+	top: 0;
 	width: 100%;
 	height: 4em;
+	z-index: 1;
 	background: #FFFFFF;
-	position: relative;
 }
 
 .item-left{
 	position: absolute;
 	left: 0%;
+	height: 100%;
 	background: #FFFFFF;
 	text-align: left;
 }
 
 .item-right{
 	position: absolute;
+	height: 100%;
 	right: 0%;
 	background: #FFFFFF;
 }
@@ -168,6 +135,7 @@ h3{
 
 .footer {
 	position: relative;
+	bottom: 0;
 	width: 100%;
 	color: #fff;
 	background: #E8E8E8;

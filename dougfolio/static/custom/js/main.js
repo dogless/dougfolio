@@ -3,10 +3,6 @@ function EasyPeasyParallax() {
 	$('.first').css({
 		'background-position' : '50% ' + (-scrollPos/4)+"px"
 	});
-	$('.bannertext').css({
-		'margin-top': (scrollPos/4)+"px",
-		'opacity': 1-(scrollPos/250)
-	});
 }
 
 $(document).ready(function(){
@@ -14,6 +10,17 @@ $(document).ready(function(){
 		EasyPeasyParallax();
 	});
 
+	var controller = $.superscrollorama();
+	controller.addTween(
+	  '.second',
+	  (new TimelineLite())
+	    .append([
+	      TweenMax.to($('.first'), 1, 
+	        {css:{backgroundPosition: 1000}, immediateRender:true} 
+	        ),
+	    ]),
+	  200 // scroll duration of tween
+	);
 	// $('.sidebar').animate(
 	// 	{marginLeft: "0%", opacity: 0.6}, 300, 'swing'
 	// );
