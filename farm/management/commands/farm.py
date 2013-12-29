@@ -1,5 +1,3 @@
-#! /usr/bin/Python
-
 import threading
 import time
 import random
@@ -10,7 +8,6 @@ from django.core.management.base import BaseCommand
 from django.core.management.base import CommandError
 import os.path
 
-#login_link = "https://login.live.com/login.srf?wa=wsignin1.0&rpsnv=11&ct=1383594353&rver=6.0.5286.0&wp=MBI&wreply=http:%2F%2Fwww.bing.com%2FPassport.aspx%3Frequrl%3Dhttp%253a%252f%252fwww.bing.com%252f&lc=1033&id=264960"
 users = [ ["dougc93@hotmail.com", "berryking2"], ["candysmith5@live.com", "jimmyeatworld1"], ["penelopesweet88@live.com","jimmyeatworld1"], ["dalecarnegie1@live.com","jimmyeatworld1"],
 		["vannianoubis@live.com","bigapple3"]]
 cookies = []
