@@ -58,6 +58,7 @@ def login(driver, username, password):
 	pw = driver.find_element_by_name("passwd")
 	pw.send_keys(password)
 	pw.submit()
+	print driver.title + ": " + str(username)
 	driver.get("http://bing.com")
 	# wait for cookie
 	time.sleep(10)
