@@ -25,7 +25,7 @@ class Command(BaseCommand):
 class farmThread(threading.Thread):
 	def __init__(self, counter):
 		threading.Thread.__init__(self)
-		self.driver = webdriver.PhantomJS()
+		self.driver = webdriver.PhantomJS(PROJECT_ROOT + '/farm/phantomjs/bin/phantomjs')
 		self.counter = counter
 	def run(self):
 		login(self.driver, users[self.counter][0], users[self.counter][1])
