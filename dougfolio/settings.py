@@ -53,7 +53,7 @@ LANGUAGE_CODE = 'en-us'
 SITE_ID = 1
 
 # Full filesystem path to the project.
-PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
+# PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Name of the directory for the project.
 PROJECT_DIRNAME = PROJECT_ROOT.split(os.sep)[-1]
@@ -159,6 +159,7 @@ TEMPLATE_DIRS = (os.path.join(PROJECT_ROOT, "templates"),)
 
 INSTALLED_APPS = (
     "dough",
+    "farm",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
